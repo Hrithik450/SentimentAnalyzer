@@ -16,3 +16,9 @@
 .pagination .active {
   background: linear-gradient(90deg, #ff00ff, #ff7300);
 }
+
+@media (max-width: 991px) {
+  .pagination li {
+    padding-inline: 0.5rem;
+  }
+}

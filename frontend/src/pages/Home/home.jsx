@@ -51,20 +51,20 @@ const Home = () => {
   };
 
   return (
-    <main>
-      <h1 className="text-center font-medium text-3xl mx-auto my-2 py-6 border-b border-b-gray-500 max-w-[80%]">
+    <main className="px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20">
+      <h1 className="text-center font-medium text-2xl sm:text-3xl mx-auto my-2 py-4 sm:py-6 border-b border-b-gray-500 max-w-[1280px] w-full">
         AI-Powered Crypto Market Analyzer
       </h1>
-      <div className="max-w-[80%] mx-auto grid grid-cols-4 grid-rows-1 gap-6 my-6">
+      <div className="max-w-[1280px] w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 my-6">
         <SentimentCompoundChart sentimentData={sentimentData} />
         <SentimentTrendChart sentimentData={sentimentData} />
         <PositiveSentimentDominanceChart sentimentData={sentimentData} />
         <SentimentDistributionChart sentimentData={sentimentData} />
       </div>
-      <h3 className="font-medium text-2xl mx-auto my-2 pb-4 border-b border-b-gray-500 max-w-[80%]">
+      <h3 className="font-medium text-xl sm:text-2xl mx-auto my-2 pb-3 sm:pb-4 border-b border-b-gray-500 max-w-[1280px] w-full">
         Today's Insights
       </h3>
-      <section className="max-w-[80%] mx-auto grid grid-cols-4 grid-flow-rows gap-4 p-6">
+      <section className="max-w-[1280px] w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 sm:p-4">
         {isLoading
           ? [...Array(8)].map((_, idx) => (
               <ShimmerCard key={`shimmer-${idx}`} />
@@ -83,7 +83,7 @@ const Home = () => {
               />
             ))}
       </section>
-      <div className="my-8">
+      <div className="my-6 sm:my-8 flex justify-center">
         <Pagination
           activePage={page}
           itemsCountPerPage={8}
@@ -93,8 +93,8 @@ const Home = () => {
           prevPageText="Prev"
           firstPageText="First"
           lastPageText="Last"
-          itemClass="flex justify-center items-center bg-[linear-gradient(315deg,#2b4162_0%,#12100e_74%)] list-none border border-white px-6 py-4 transition-all duration-300 cursor-pointer md:px-2 md:py-2 sm:px-1 sm:py-1"
-          linkClass="no-underline text-white text-base transition-all md:text-sm"
+          itemClass="flex justify-center items-center bg-[linear-gradient(315deg,#2b4162_0%,#12100e_74%)] list-none border border-white px-3 py-2 sm:px-6 sm:py-4 transition-all duration-300 cursor-pointer text-sm sm:text-base"
+          linkClass="no-underline text-white transition-all"
           activeClass="active"
           activeLinkClass="text-white"
         />

@@ -79,7 +79,7 @@ const Card = ({ image, date, title, sentiment, url, theme }) => {
         <h4 className="font-medium text-sm px-2 line-clamp-2 text-gray-800">
           {title}
         </h4>
-        <h4 className="font-medium text-sm px-2 my-2">Future Analysis:</h4>
+        <h4 className="font-medium text-sm px-2 my-2">Impact Analysis:</h4>
         <div className="grid grid-cols-2 grid-rows-3 gap-1 px-2 text-sm">
           <p className="text-green-500 font-semibold">Positive: </p>
           <strong className="text-green-500">
@@ -96,7 +96,7 @@ const Card = ({ image, date, title, sentiment, url, theme }) => {
         </div>
         <a
           href={url}
-          className="px-2 m-2 mt-4 bg-[linear-gradient(90deg,#ff00ff,#ff7300)] py-1 px-4 rounded-sm text-white cursor-pointer inline-block"
+          className="px-2 m-2 mt-4 bg-[linear-gradient(90deg,#ff00ff,#ff7300)] py-1 rounded-sm text-white cursor-pointer inline-block"
         >
           View More...
         </a>
