@@ -4,9 +4,9 @@ An advanced AI-driven tool that collects and analyzes **crypto news, social medi
 
 ## 🚀 Features
 - **Real-time sentiment analysis** from **Twitter, news sites, and crypto forums**.
-- **85%+ accuracy** in sentiment classification using **VADER & SpaCy**.
-- **Market Mood Indicator** powered by **D3.js** for **data visualization**.
-- **Scalable backend** handling **500+ API requests/sec** using **Django**.
+- **85%+ accuracy** in sentiment classification using **VADER**.
+- **Market Mood Indicator** powered by **chart.js** for **data visualization**.
+- **Scalable backend** handling **500+ API requests/sec** using **Flask**.
 - **Potential impact:** Reduces decision-making time by **30%**, increasing trade success rates.
 
 ## 🛠 Tech Stack
@@ -19,7 +19,7 @@ An advanced AI-driven tool that collects and analyzes **crypto news, social medi
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/market-sentiment-analyzer.git
+git clone https://github.com/Hr/market-sentiment-analyzer.git
 cd market-sentiment-analyzer
 
 # Install backend dependencies
