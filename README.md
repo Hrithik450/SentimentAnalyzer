@@ -19,10 +19,11 @@ An advanced AI-driven tool that collects and analyzes **crypto news, social medi
 
 ```bash
 # Clone the repository
-git clone https://github.com/Hr/market-sentiment-analyzer.git
-cd market-sentiment-analyzer
+git clone https://github.com/Hrithik450/SentimentAnalyzer.git
+cd SentimentAnalyzer
 
 # Install backend dependencies
+cd backend
 pip install -r requirements.txt
 
 # Start the backend server
