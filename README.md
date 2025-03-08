@@ -33,4 +33,4 @@ cd frontend
 npm install
 
 # Start the frontend
-npm start
+npm run dev
